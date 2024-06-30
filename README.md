@@ -8,6 +8,12 @@ Clone the repo
 git clone https://github.com/AnyaDroz/martian-stopwatch.git
 ```
 
+Navigate to the project directory
+
+```bash
+cd martian-stopwatch
+```
+
 Install the dependencies
 
 ```bash
