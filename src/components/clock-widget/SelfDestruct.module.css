@@ -1,0 +1,33 @@
+.button {
+    width: 48px;
+    height: 48px;
+    background-color: var(--tertiary-action);
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border-radius: 500px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+}
+
+.aliens {
+    height: 22px;
+    width: 22px;
+}
+
+.button:hover {
+    background-color: var(--tertiary-action-hover);
+}
+
+.button:active {
+    background-color: var(--tertiary-action-active);
+}
+
+.button:focus-visible {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 0px;
+    border: 1px solid var(--focus-color);
+}

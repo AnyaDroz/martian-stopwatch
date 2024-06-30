@@ -1,0 +1,22 @@
+.container {
+    background-color: var(--primary-color);
+    grid-row: 2/3;
+    grid-column: 3/7;
+    border-radius: var(--border-radius);
+    display: flex;
+    padding: 8px;
+    gap: 8px;
+    flex-direction: column;
+    position: relative;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 8px;
+}
+
+@media only screen and (max-width: 478px) {
+    .container {
+        grid-column: 1/-1;
+    }
+}

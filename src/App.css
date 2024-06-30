@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Rules";
+    src: url("/public/fonts/RulesVariable.ttf") format("truetype");
+    font-weight: 200 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 100;
+    src: url('https://fonts.gstatic.com/s/notosans/v15/o-0IIpQlx3QUlC5A4PNb4j5Ba_2c7A.ttf') format('truetype');
+}
+
+:root {
+    --primary-color: #1437bb;
+    --background-color: black;
+    --border-radius: 16px;
+    --border-radius-sm: 14px;
+    --primary-action: black;
+    --primary-action-hover: #080808;
+    --primary-action-active: #121212;
+    --mars-display: #FF0000;
+    --earth-display: #2B5DBE;
+    --tertiary-action: #FF0000;
+    --tertiary-action-hover: #dc0202;
+    --tertiary-action-active: #A80000;
+    --focus-color: #FFC34E;
+    --secondary-action: #1C1C1C;
+    --secondary-action-hover: #0A0A0A;
+    --secondary-action-active: #040404;
+    --content-color: white;
+    --font-family: 'Noto Sans';
+    --max-width: 1280px;
+    --label-color: #787878;
+}
+
+html {
+    scrollbar-width: none;
+    scrollbar-gutter: unset;
+    scrollbar-color: transparent transparent;
+    background-color: black;
+}
+
+.App {
+    position: relative;
+    height: 100svh;
+    align-content: center;
+    background-color: var(--background-color);
+}
+
+p, h2 {
+    margin: 0;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+    background: transparent;
+
+}
+
+::-webkit-scrollbar-thumb {
+    display: none;
+    width: 2px;
+    background: transparent;
+    border-radius: 500px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    display: none;
+    background: transparent;
+}
+
+@media only screen and (max-width: 478px) {
+    .App {
+        align-content: start;
+    }
+}
+
+
+
+

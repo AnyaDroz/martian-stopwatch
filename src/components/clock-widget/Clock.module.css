@@ -1,0 +1,23 @@
+.container {
+    background-color: var(--primary-color);
+    grid-column: 3 / 7;
+    height: 380px;
+    border-radius: var(--border-radius);
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top:12px;
+    left: 12px;
+}
+
+@media only screen and (max-width: 478px) {
+    .container {
+        grid-column: 1/-1;
+    }
+}

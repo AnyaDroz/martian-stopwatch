@@ -1,0 +1,52 @@
+.timeDisplay {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: var(--border-radius-sm);
+}
+
+.timeContainer {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.timeContainerMars {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-end;
+    text-align: end;
+}
+
+.earthTime {
+    font-size: 16px;
+    font-family: var(--font-family), monospace;
+    color: var(--earth-display);
+    text-transform: uppercase;
+    font-weight: 200;
+    line-height: 100%;
+}
+
+.marsTime {
+    color: var(--mars-display);
+    font-size: 40px;
+    font-family: var(--font-family), monospace;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.label {
+    font-size: 12px;
+    font-family: var(--font-family);
+    color: var(--label-color);
+    text-transform: uppercase;
+}
+
+.numberSpacing {
+    text-align: left;
+
+}

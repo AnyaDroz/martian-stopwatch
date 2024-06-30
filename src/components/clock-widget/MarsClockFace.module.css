@@ -1,0 +1,81 @@
+.clockFace {
+    background-color: black;
+    height: 290px;
+    width: 290px;
+    display: inline-flex;
+    position: relative;
+    z-index: 1;
+    border-radius: 500px;
+}
+
+.dialTick {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform-origin: top center;
+    height: 128px;
+    background-color: white;
+    clip-path: inset(115px 0 0 0);
+}
+
+.number {
+    transform-origin: top center;
+    height: 200px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: var(--label-color);
+}
+
+.numbers {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+
+.clockHand {
+    transform-origin: top center;
+    position: absolute;
+    left: 50%;
+    top: 72%;
+    width: 3px;
+    z-index: 3;
+    height: 128px;
+    background-color: var(--mars-display);
+}
+
+.clockHand::after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    top: -6px;
+    border-radius: 500px;
+    z-index: 3;
+    height: 12px;
+    width: 12px;
+    background-color: black;
+    border: 4px solid var(--mars-display);
+}
+
+.tipContainer {
+    position: absolute;
+    top: -55px;
+    left: -1.5px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.clockHandTip {
+    background-color: var(--mars-display);
+    width: 3px;
+    height: 20px;
+}
+
+.tipCounter {
+    height: 40px;
+    width: 6px;
+    background-color: var(--mars-display);
+    border-radius: 24px;
+}

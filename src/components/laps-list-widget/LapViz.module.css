@@ -1,0 +1,41 @@
+.container {
+    height: 100%;
+    width: 24px;
+    background-color: black;
+    border-top-right-radius: var(--border-radius-sm);
+    border-bottom-right-radius: var(--border-radius-sm);
+    display: flex;
+    padding: 8px 6px 8px 0px;
+    gap: 2px;
+}
+
+
+.scrollContainer {
+    height: 100%;
+    overflow: hidden;
+    width: auto;
+    gap: 2px;
+}
+
+.lines {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 4px;
+    gap: 6px;
+}
+
+.earthLine {
+    height: 100px;
+    width: 2px;
+    background-color: var(--earth-display);
+}
+
+.marsLine {
+    height: 100px;
+    width: 2px;
+    background-color: var(--mars-display);
+}
+
+
+

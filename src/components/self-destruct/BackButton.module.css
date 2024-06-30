@@ -1,0 +1,44 @@
+.back {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 2000;
+}
+
+.backButton {
+    background-color: black;
+    color: white;
+    font-family: var(--font-family);
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    font-size: 18px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: var(--border-radius);
+    padding: 8px 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.backButton:hover {
+    background-color: var(--secondary-action);
+}
+
+.backButton:focus-visible {
+    outline: 3px solid var(--focus-color);
+}
+
+.back {
+    position: absolute;
+    font-family: "Noto Sans";
+    font-size: 40px;
+    color: white;
+}
+
+.arrow {
+    height: 16px;
+    width: 16px;
+}

@@ -1,0 +1,23 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 90px);
+    grid-template-rows: 380px 200px;
+    gap: 8px;
+    padding: 16px;
+    align-content: start;
+    justify-content: center;
+    margin: auto;
+    max-width: var(--max-width);
+    position: relative;
+}
+
+@media only screen and (max-width: 478px) {
+    .grid {
+        margin-top: 58px;
+        height: 100svh;
+        gap: 4px;
+        padding: 8px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto auto;
+    }
+}

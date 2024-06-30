@@ -1,0 +1,71 @@
+.container {
+    padding: 4px;
+    height: 54px;
+    width: 160px;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+}
+
+.toggle {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 12px;
+    display: flex;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.toggle:hover {
+    background-color: var(--secondary-action);
+}
+
+.toggleButton {
+    height: 100%;
+    width: 50%;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.label {
+    color: var(--label-color);
+    font-family: var(--font-family);
+    font-size: 16px;
+}
+
+.labels {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    height: 54px;
+    width: 160px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 0;
+    text-transform: uppercase;
+}
+
+.toggle:focus-visible {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 4px;
+}
+
+@media only screen and (max-width: 478px) {
+    .container {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        margin-bottom: 4px;
+    }
+}

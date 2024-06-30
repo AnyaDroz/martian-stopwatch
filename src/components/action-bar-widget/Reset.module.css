@@ -1,0 +1,50 @@
+.container {
+    clip-path: ellipse(50% 45%);
+    width: 88px;
+    height: 49px;
+    background-color: var(--primary-color);
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 14%;
+}
+
+.ellipse {
+    border: 1px solid transparent;
+    clip-path: ellipse(50% 40%);
+    width: 77px;
+    height: 44px;
+    background-color: var(--tertiary-action);
+    position: absolute;
+    z-index: 2;
+    transform: translate(7%, 5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ellipse:hover {
+    background-color: var(--tertiary-action-hover);
+}
+
+.ellipse:active {
+    background-color: var(--tertiary-action-active);
+}
+
+.ellipse:focus-visible .text {
+    color: black;
+}
+
+.ellipse:focus-visible {
+    background-color: var(--focus-color);
+    outline: 1px solid transparent;
+}
+
+.text {
+    color: white;
+    margin-bottom: 1px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 300;
+}
